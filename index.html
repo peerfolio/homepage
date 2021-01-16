@@ -366,11 +366,12 @@ other interesting themes:
      <script>
       
       $.ajax({
-        url: "https://peerfol.io/api/v2/users"
-        ,dataType: "json"
+        url: "https://peerfol.io/api/v1/users"
+        ,dataType: "jsonp"
+        ,jsonp: "wrapper"
       }).done(function(data, textStatus, jqXHR) {
         if (data.total) {
-          $("#totalUsers").html("#Peerfolios: ~" + data.total + "k");
+          $("#totalUsers").html("#Peerfolios: ~" + data.total + "");
         }
       });
     </script>
