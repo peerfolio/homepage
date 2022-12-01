@@ -1,2 +1,2 @@
 # peerfolio.github.io
-Github Page for www.peerfol.io
+Github Page for peerfol.io
