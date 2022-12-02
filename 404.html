@@ -1,1 +1,8 @@
-404 Test
+404 File not found
+<script>
+  if (let match = location.pathname.substr(1).match(/^\d+$/)) {
+    window.location.replace("https://app.peerfol.io/" + match[0]);
+  } else {
+    window.location.replace("https://peerfol.io/");
+  }
+<script>
